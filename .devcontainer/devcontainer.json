@@ -28,6 +28,7 @@
         "aaron-bond.better-comments",
         "ms-vscode.makefile-tools",
         "golang.go",
+        "zxh404.vscode-proto3",
         "juggernautjp.less-toml",
         "graphql.vscode-graphql",
         "hashicorp.terraform"
