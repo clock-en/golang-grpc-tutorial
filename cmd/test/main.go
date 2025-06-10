@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/clock-en/golang-grpc-tutorial/pb"
+	"github.com/clock-en/golang-grpc-tutorial/cmd/test/pb"
 	"google.golang.org/protobuf/proto"
 	"io/ioutil"
 	"log"
@@ -33,12 +33,12 @@ func main() {
 	}
 
 	// ファイル生成
-	if err := ioutil.WriteFile("test.bin", binData, 0666); err != nil {
+	if err := ioutil.WriteFile("./cmd/test/test.bin", binData, 0666); err != nil {
 		log.Fatalln("Can't write:", err)
 	}
 
 	// ファイルの読み込み
-	in, err := ioutil.ReadFile("test.bin")
+	in, err := ioutil.ReadFile("./cmd/test/test.bin")
 	if err != nil {
 		log.Fatalln("Can't read file:", err)
 	}
